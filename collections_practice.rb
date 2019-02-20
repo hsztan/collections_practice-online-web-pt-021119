@@ -41,8 +41,5 @@ def sum_array(array)
 end
 
 def add_s(array)
-  array.map.with_index do |element, index|
-    element << "s" unless index == 1
-    binding.pry
-  end
+  array.map.with_index {|element, index| element << "s" unless index == 1}
 end
