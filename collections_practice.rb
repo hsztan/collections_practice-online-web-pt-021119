@@ -42,4 +42,7 @@ end
 
 def add_s(array)
   array.map.with_index {|element, index| element << "s" unless index == 1}
+  array
 end
+
+#why does line 44 return nil as the second element in the array?
