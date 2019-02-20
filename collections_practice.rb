@@ -29,3 +29,20 @@ def kesha_maker(array)
     element
   end
 end
+
+def find_a(array)
+  array.select {|element| element.start_with?("a")}
+end
+
+def sum_array(array)
+  sum = 0
+  array.each {|num| sum += num}
+  sum
+end
+
+def add_s(array)
+  array.map.with_index do |element, index|
+    element << "s" unless index == 1
+    binding.pry
+  end
+end
